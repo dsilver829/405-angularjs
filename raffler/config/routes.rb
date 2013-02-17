@@ -1,5 +1,5 @@
 Raffler::Application.routes.draw do
-  get "raffle/index"
+  root :to => 'raffle#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +50,6 @@ Raffler::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'raffle#index'
 
   # See how all your routes lay out with "rake routes"
 
